@@ -1,0 +1,6 @@
+# source this file in your current bash session
+
+export FLASK_APP="run.py"
+export APP_SETTINGS="development"
+export SECRET_KEY="fglkj43g%eglkj59g!233k"
+export DATABASE_URL="postgresql://localhost/tweets_api_db"

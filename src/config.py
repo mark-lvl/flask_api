@@ -2,6 +2,7 @@
 
 import os
 
+
 class Config(object):
     """
     General environment configuration
@@ -11,11 +12,13 @@ class Config(object):
     SECRET_KEY = os.getenv('SECRET_KEY')
     SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URI')
 
+
 class Development(Config):
     """
     Development environment configuration
     """
     TESTING = True
+
 
 class Production(Config):
     """
@@ -23,7 +26,8 @@ class Production(Config):
     """
     DEBUG = False
 
+
 app_config = {
-    'development' : Development,
-    'production' : Production
+    'development': Development,
+    'production': Production
 }
